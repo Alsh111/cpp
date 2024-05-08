@@ -11,7 +11,7 @@ class Queue
 {
 	Node *head, *tail;
 	int count = 0;
-	Node* Prev(Node *); // Переход к предыдущему узлу (не интерфейсный метод)
+	Node* Prev(Node *); 
 public:
 	Queue() { head = NULL; tail = NULL; } // Инициализация списка
 	int getCount() { return count; } // Получение количества узлов списка
@@ -23,7 +23,7 @@ public:
 	void Clear();				// Очистка списка
 	Node* Next(Node *);			// Переход к следующему узлу
 	Node* Push(int, Node*);		// Добавление узла списка
-	Node* Pop();		// Удаление узла списка
+	Node* Pop();		// Получение и удаление узла списка
 	void Print();				// Вывод значений узлов списка
 	void Swap(Node*, Node*);	// Взаимообмен двух узлов
 };
